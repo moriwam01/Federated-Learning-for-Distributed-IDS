@@ -1,0 +1,32 @@
+--- Head of Dataset ---
+Protocol,Flag,Packet,Sender ID,Receiver ID,Source IP Address,Destination IP Address,Source Port,Destination Port,Packet Size,Target Variable
+TCP,SYN,HTTP,123456,987654,192.168.0.1,10.0.0.5,12345,80,1024,Phishing
+UDP,ACK,DNS,987654,123456,10.0.0.2,192.168.0.1,53,12345,512,DoS
+TCP,SYN,SSH,789012,345678,192.168.1.10,10.0.0.8,22,12345,256,Man-in-the-Middle
+UDP,ACK,NTP,345678,789012,10.0.0.5,192.168.1.10,123,12345,128,DDoS
+TCP,RST,FTP,234567,456789,192.168.0.5,10.0.0.10,20,12345,2048,SQL Injection
+
+--- Describe of Dataset ---
+,count,mean,std,min,25%,50%,75%,max
+Sender ID,750.0,576178.76,286422.5908550394,123456.0,345678.0,567890.0,789012.0,987654.0
+Receiver ID,750.0,582752.624,287956.8151036551,123456.0,345678.0,678901.0,890123.0,987654.0
+Source Port,750.0,3155.512,5282.061308120126,20.0,25.0,161.0,443.0,12345.0
+Destination Port,750.0,9297.088,5311.018756814602,20.0,12345.0,12345.0,12345.0,12345.0
+Packet Size,750.0,959.488,1154.0345825029713,128.0,256.0,512.0,1024.0,4096.0
+
+--- Info of Dataset ---
+RangeIndex:, to, 749
+Data, 11, columns):
+Column, Non-Null Count, Dtype
+---, --------------, -----
+0, non-null, object
+1, non-null, object
+2, non-null, object
+3, non-null, int64
+4, non-null, int64
+5, non-null, object
+6, non-null, object
+7, non-null, int64
+8, non-null, int64
+9, non-null, int64
+10, non-null, object
